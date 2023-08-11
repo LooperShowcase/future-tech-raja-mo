@@ -59,6 +59,10 @@ loadVoicesWhenAvailable(function () {
   console.log("loaded");
 });
 
+function speak() {
+  setTimeout(() => playByText("en-US", "Hello, world"), 300);
+}
+
 let open_ai_response;
 
 let conversation = [
