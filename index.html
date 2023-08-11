@@ -1,0 +1,35 @@
+
+<html >
+<head>
+    <title>shrek-gpt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>Potato</h1>
+        <br>
+        <p>HELLO HI H0W IS IT GOING THIS IS SHREK</p>
+    <br>
+    <button id="initBtn" onclick="speak()"> init audio</button>
+</center>
+    <div class="container">
+        <img src="https://i.insider.com/5fd7c083e00bce00188bb457?width=600&format=jpeg&auto=webp" >
+        <form
+            onsubmit="
+            event.preventDefault();
+            conversationUserAdd(document.getElementById('input-text').value);
+            openai_test();
+            ">
+                <input type="text" id="input-text" placeholder="say something"/>
+                <br/>
+            <center>
+            <button id="submit-button">submit</button>
+            </center>
+            </form>
+    <div id="chat-container"></div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
